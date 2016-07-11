@@ -1,0 +1,48 @@
+{
+  "name": "wudi",
+  "base": "AccessToken",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "wudi": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "setName": {
+      "isStatic": false,
+      "accepts": [
+        {
+          "arg": "aa",
+          "type": "string",
+          "required": true,
+          "description": "asd"
+        },
+        {
+          "arg": "as",
+          "type": "string",
+          "required": false,
+          "description": "as"
+        }
+      ],
+      "returns": [],
+      "description": "ever you enmage",
+      "http": [
+        {
+          "path": "127.0.0.1/set-name",
+          "verb": "post"
+        },
+        {
+          "path": "there",
+          "verb": "post"
+        }
+      ]
+    }
+  }
+}
